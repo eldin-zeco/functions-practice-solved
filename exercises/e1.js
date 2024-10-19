@@ -14,8 +14,9 @@
 */
 
 // Your code goes here
-
-
+  function logMessage() {
+    console.log('Hello World')
+  }
 
 
 /**
@@ -30,7 +31,11 @@
 */
 
 // Your code goes here...
+  function logMyMessage(message) {
+    console.log(message)
+  }
 
+  logMyMessage("I log my message yipeeeee")
 
 
 
