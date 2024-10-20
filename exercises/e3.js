@@ -15,7 +15,18 @@
  */
 
 // Your code goes here...
+  function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+    if (!arr.length) return false;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > val1 && arr[i] < val2) {
+        return true
+      }
+    }
+    return false;
+  }
 
+  console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5)); // true
+  console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10)); // false
 
 
 
@@ -35,6 +46,34 @@
  */
 
 // Your code goes here...
+// FUNCTION DECLARATION
+  function getValueWithConditionOne(num1, num2) {
+    if (num1 === 40 && num2 === 40) {
+      return num1 + num2
+    }
+    return (num1 * 2) + (num2 * 2)
+  }
+
+// ARROW FUNCTION
+  const getValueWithConditionTwo = (num1, num2) => {
+    if (num1 === 40 && num2 === 40) {
+      return num1 + num2
+    }
+    return (num1 * 2) + (num2 * 2)
+  }
+
+// FUNCTION EXPRESSION
+const getValueWithConditionThree = function(num1, num2) {
+  if (num1 === 40 && num2 === 40) {
+    return num1 + num2
+  }
+  return (num1 * 2) + (num2 * 2)
+}
+
+console.log(getValueWithConditionThree(50,40))
+
+
+
 
 
 
